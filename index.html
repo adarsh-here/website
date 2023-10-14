@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+</head>
+<link rel="stylesheet" href="css/style.css">
+<style>
+    /*css reset*/
+    body {
+        font-family: Arial, Helvetica, sans-serif;
+        color: white;
+        margin: 0px;
+        padding: 0px;
+        background:url('img/bg3.jpg');
+    }
+    .left {
+        position: absolute;
+        left: 60px;
+        top: 20px;
+    /*border: 2px solid red;*/
+    }
+    .left img {
+        width: 90px;
+        filter: invert(100%);
+    }
+    .left div {
+        text-align: center;
+    }
+    .mid {
+        display: block;
+        width: 43%;
+        margin: 40px auto;
+       /* border: 2px solid green;*/
+    }
+    .right {
+        display: block;
+    width: 43%;
+    position: absolute;
+    top: 0; /* Align the container to the top */
+    right: 0px;
+        /* border: 2px solid yellow; */
+    }
+
+    
+    .navbar-container {
+        
+        display: flex;
+        background-color: rgba(0, 0, 0, 0.5); /* Add background color for the box */
+        padding: 10px; /* Add padding to the box */
+        border-radius: 5px; /* Add rounded corners to the box */
+    }
+
+    .navbar {
+        display: inline-block;
+        list-style: none;
+        margin: 0;
+        padding: 0;
+    }
+    .navbar li{
+        display: inline-block;
+        font-size: 20px;
+        margin-right: 20px;
+    }
+    .navbar li a {
+        color: white;
+        text-decoration: none;
+        padding: 20px 10px;
+    }
+    .navbar li a:hover, .navbar li a.active {
+       text-decoration: underline;
+       color: red;
+    }
+
+    /* home content */
+    .max-width{
+        max-width: 1300px;
+        padding: 0 80px;
+        margin: auto;
+    }
+    section{
+        padding: 50px 0 50px 0;     
+    }
+    .Home{
+        display: flex;
+    }
+    .Home .max-width{
+        width: 100%;
+        display: flex;
+    }
+    .Home .home-content{
+        width: 50%;
+        padding: 2rem;
+    }
+    .Home h3{
+        color: antiquewhite;
+        margin-top: 6rem;
+        font-size: 5rem;
+        font-family:sans-serif;
+    }
+    .Home p{
+        color: aqua;
+        margin-top: 1rem;
+        font-size: 30px;
+    }
+    .Home .home-content .btn{
+        
+        margin: 0px 9px;
+        background-color: orangered;
+        color: white;
+        padding: 4px 14px;
+        border: 2px solid orange;
+        border-radius: 4px;
+        font-size: 16px;
+        cursor:pointer;
+    }
+    .Home .home-content .btn:hover{
+        background-color:orange;
+    }
+
+
+    </style>
+<body>
+    <header class="header">
+          <div class="left">
+     <img src="img/gym.png" alt="logo">
+     <div>
+         Fitness Studio
+     </div>
+    </div> 
+        <div class="right">
+            <div class="navbar-container">
+        <ul class="navbar">
+            <li><a href="#" class="active">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Plans</a></li>
+            <li><a href="login.html">Login</a></li>
+            <li><a href="register.html">Signup</a></li>
+        </ul>
+    </div>
+</div>
+    </header>
+    <form action="register.html">
+    <section class="Home">
+        <div class="max-width">
+            <div class="home-content">
+                <h3>Help for ideal <br>Body Fitness</h3>
+                <p>"The pain you feel today <br>Will be the strength you feel tommorow"</p>
+                <button class="btn">Get Started</button>
+            </div>
+        </div>
+
+    </section>
+     <!-- <p>
+    <div class="moving-text"> 
+        this is some moving  text content!!  
+    </div>
+ </p> -->
+</form>
+</body>
+</html>
